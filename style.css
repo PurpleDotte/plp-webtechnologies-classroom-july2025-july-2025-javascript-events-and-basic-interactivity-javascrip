@@ -1,0 +1,204 @@
+/*Navbar styles*/
+.navbar {
+    background-color: khaki; /* Slightly darker forest green */
+    padding: 10px 0;
+}
+
+.navbar ul {
+    list-style: none;
+    text-align: center;
+    margin: 20px;
+    padding: 15px;
+}
+
+.navbar ul li {
+    display: inline;
+    margin: 0 30px;
+    font-size: 30px;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: #3b5c40; /* Light contrasting green */
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+.navbar ul li a:hover {
+    color: orangered; /
+}
+
+/* Card Styles */
+.cardContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 400px;
+    margin-top: 20px;
+}
+
+.card {
+    background-color: #c8e6c9; /* Light green */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card p {
+    color: #555;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+
+/* Main Section Styles */
+h4 {
+    color: #555;
+}
+
+#signUp {
+    text-align: center;
+}
+
+.content {
+    flex: 1 1 70%;
+    padding: 20px;
+    background-color: #ffffff; /* White background */
+    border-radius: 8px;
+    box-sizing: border-box;
+    width: 30%;
+}
+
+/* Button Styles*/
+#displayButton, #signUpButton {
+    background-color: khaki;
+    width: 100%;
+    padding: 10px;
+    cursor: pointer;
+}
+
+/* Dark Mode*/
+body{
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background-color: white;
+    color: black;
+}
+
+body.dark{
+    background-color: #222;
+    color: white;
+}
+
+/* Dark Mode Overrides*/
+body.dark{
+    background-color: #121212;
+    color: #ffffff; 
+}
+
+    /* navbar */
+body.dark .navbar{
+    background-color: #1e1e1e;
+}
+
+body.dark .navbar ul li a{
+    color: #eeeeee;
+}
+
+body.dark .navbar ul li a:hover{
+    color: orangered;
+}
+
+    /* cards */
+body.dark .card{
+    background-color: #2a2a2a;
+    color: #ffffff;
+    border: 1px solid #444;
+}
+
+body.dark .card p{
+    color: #cccccc;
+}
+
+    /* form inuts*/
+body.dark input{
+    background-color: #333;
+    color: #fff;
+    border: 1px solid #555;
+}
+
+    /* buttons */
+body.dark #displayButton, #signUpButton{
+    background-color: blueviolet;
+    color: white;
+}
+
+body.dark #displayButton:hover,
+body.dark #signUpButton:hover,
+body.dark #darkMode:hover{
+    background-color: #444;
+    color: #fff;
+    border: 1px solid #666;
+}
+
+    /* error messages*/
+body.dark .error{
+    color: #ff6b6b;
+}
+
+    /* content section */
+body.dark .content{
+    background-color: #1e1e1e;
+    color: #fff;
+}
+
+    /* card container */
+body.dark .cardContainer{
+    background-color: transparent;
+}
+
+    /* h4 */
+body.dark h4{
+    color: blueviolet;
+}
+
+/* Form Validation*/
+.error{
+    color: red;
+}
+
+#darkMode{
+    padding: 10px;
+    margin-left: 90%;
+    background-color: #3b5c40; 
+    color: #ffffff;             /*white*/
+    cursor: pointer;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .navbar ul {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .navbar ul li {
+        margin: 10px 0;
+    }
+
+    .content {
+        flex: 1 1 100%;
+    }
+
+    .card-container {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 480px) {
+    .card-container {
+        grid-template-columns: 1fr;
+    }
+}

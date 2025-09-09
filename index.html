@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <title>Week Six Assignment</title>
+    </head> 
+    <body>
+        <div id="interactiveElements">
+            <nav class="navbar">
+                <ul>
+                    <li><a href="#">Introduction</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">FAQ</a></li>
+                </ul>
+                <!-- interactive ui elements -->
+                <button id="darkMode" onclick="toggleTheme()">Dark Mode</button>
+            </nav>
+        </div>
+        <section class="content">
+        <div class="cardContainer">
+            <div class="card">
+                <h4 id="hi">Hi!</h4>
+                    <label>What is your name? </label>
+                    <input type="text" id="nameInput" placeholder="Name">
+                    <p id="nameDisplay"></p>
+                    <!-- interactive ui elements -->
+                    <button id="displayButton">Click</button>
+                    <p id="textDisplay"></p>
+            </div>
+            <div class="card">
+                <form id="myForm">
+                    <h4 id="signUp">Sign Up</h4>
+                    <label for="username">Username:</label>
+                    <input type="text" id="username" name="username">
+                    <span id="usernameError" class="error"></span>
+                    <br><br>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email">
+                    <span id="emailError" class="error"></span>
+                    <br><br>
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password">
+                    <span id="passwordError" class="error"></span>
+                    <br><br>
+                    <!-- interactive ui elements -->
+                    <button id="signUpButton" type="submit">Sign Up</button>
+                </form>
+            </div>
+        </div>
+        </section>        
+        <script src="script.js"></script>
+    </body>
+</html>
